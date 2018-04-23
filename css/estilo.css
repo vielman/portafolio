@@ -1,10 +1,11 @@
 @import url('fuentes.css');
-
 /*--- Eslilos generales ---*/
 body{
   background-color: #efefef;
 }
-
+*{
+  font-family: 'Inconsolata', monospace;
+}
 .container {
   width: 100%;
   max-width: 1000px;
@@ -12,6 +13,25 @@ body{
   padding-left: 15px;
   margin: 0 auto;
 } 
+a, a:focus, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+/*--- Eslilos del Header ---*/
+.nav {
+  background-color: #0487cc;
+  box-shadow: 0 0 10px rgba(0,0,0,.2), 0 0 15px rgba(0,0,0,.15);
+}
+.nav-link {
+  color: white;
+}
+.nav-item {
+  display: inline-block;
+  opacity: .85;
+  transition: all .2s;
+  margin: 20px 30px 20px 30px;
+}
+/*--- Eslilos del perfil---*/
 .texto-justificado {
   text-align: justify;
 }
@@ -23,6 +43,9 @@ body{
 .about h2 span {
   color: #000;
 }
+.about h3 {
+  color: #757575;
+}
 .titulos h2 {
   color: #0487cc;
 }
@@ -30,45 +53,38 @@ body{
   margin-bottom: 30px;
   margin-top: 20px;
 }
-.nav-link {
-  color: white;
+
+.photo-profile img {
+  width: 180px;
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
+  margin: 25px;
 }
-.nav {
-  background-color: #0487cc;
-  box-shadow: 0 0 10px rgba(0,0,0,.2), 0 0 15px rgba(0,0,0,.15);
+.profile {
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  background-color: white;
+ }
+/*--- Eslilos del portafolio--*/
+.portafolio{
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.card-group{
+  height: 380px;
+}
+.card-img-top {
+    height: 180px;
 }
 .card-body {
   background-color: #0487cc;
   color: white;
-    
 }
-.about h3 {
-  color: #757575;
-}
-*{
-  font-family: 'Inconsolata', monospace;
-}
-.social-link{
-  background-color: #0487cc;
-  box-shadow: 0 0 10px rgba(0,0,0,.2), 0 0 15px rgba(0,0,0,.15);
-  color: #fff;
-}
-li {
-  display: inline-block;
-  opacity: .85;
-  transition: all .2s;
-  margin: 20px 30px 20px 30px;
-}
-.listas {
-  list-style: none;
-  margin: 10px;
-  padding: 10px;
-  text-align:center
-}
-a, a:focus, a:hover {
-  text-decoration: none;
-  color: inherit;
-}
+
+/*--- Eslilos del formulario de contacto---*/
 .form-contac{
   padding: 20px 40px 20px;
 }
@@ -119,19 +135,7 @@ input[type=submit] {
   color: #fff;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.15), 0 2px 10px 0 rgba(0,0,0,.11);
 }
-.photo-profile img {
-  width: 180px;
-  box-shadow: 0 0 5px rgba(0,0,0,.4);
-  margin: 25px;
-}
-.profile {
-  box-shadow: 0 0 5px rgba(0,0,0,.4);
-  margin-bottom: 30px;
-  margin-top: 30px;
-  margin-right: 0px !important;
-  margin-left: 0px !important;
-  background-color: white;
- }
+
 .contac{
   margin-bottom: 30px;
   margin-top: 30px;
@@ -140,10 +144,22 @@ input[type=submit] {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.15), 0 2px 10px 0 rgba(0,0,0,.11);
   background-color: white;
 }
-.portafolio{
-  margin-right: 0px !important;
-  margin-left: 0px !important;
+/*--- Eslilos footer ---*/
+.social-link{
+  background-color: #0487cc;
+  box-shadow: 0 0 10px rgba(0,0,0,.2), 0 0 15px rgba(0,0,0,.15);
 }
-.card-img-top {
-  height: 234px;
+.fa{
+  color: #fff !important;
+}
+.listas {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  text-align:center
+ 
+}
+.listas li{
+  display: inline-block;
+  margin: 20px 30px 20px 30px;
 }
